@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BookingTest]">
+  <parameter name="browserType" value="chrome"/>
+  <test name="BookingTest(failed)">
+    <classes>
+      <class name="com.iPresence.BookingTest">
+        <methods>
+          <include name="TestHouseHoldInformationSetUp"/>
+          <include name="tearDown"/>
+          <include name="beforeclass"/>
+          <include name="TestLinksValidation"/>
+        </methods>
+      </class> <!-- com.iPresence.BookingTest -->
+    </classes>
+  </test> <!-- BookingTest(failed) -->
+</suite> <!-- Failed suite [BookingTest] -->

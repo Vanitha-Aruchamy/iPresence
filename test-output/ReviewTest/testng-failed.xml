@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ReviewTest]">
+  <parameter name="browserType" value="chrome"/>
+  <test name="ReviewTest(failed)">
+    <classes>
+      <class name="com.wallethub.ReviewTest">
+        <methods>
+          <include name="TestWallethubLogin"/>
+          <include name="TestSubmittedReview"/>
+          <include name="beforeclass"/>
+          <include name="tearDown"/>
+          <include name="TestReviewSubmit"/>
+          <include name="TestHouseHoldInformationSetUp"/>
+          <include name="TestWebsiteLaunch"/>
+          <include name="TestProfilePage"/>
+        </methods>
+      </class> <!-- com.wallethub.ReviewTest -->
+    </classes>
+  </test> <!-- ReviewTest(failed) -->
+</suite> <!-- Failed suite [ReviewTest] -->

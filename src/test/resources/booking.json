@@ -1,0 +1,166 @@
+{
+	"booking_field": [
+		{
+			"fieldName": "firstname",
+			"fieldLocator": [
+				"first_name",
+				"id"
+			],
+			"fieldType": "textbox",
+			"fieldValue": "vanitha"
+		},
+		{
+			"fieldName": "lastname",
+			"fieldLocator": [
+				"last_name",
+				"id"
+			],
+			"fieldType": "textbox",
+			"fieldValue": "QA"
+		},
+		{
+			"fieldName": "email",
+			"fieldLocator": [
+				"//div[@class='col-md-6']//input[@id='email']",
+				"xpath"
+			],
+			"fieldType": "textbox",
+			"fieldValue": "testmail@gmail.com"
+		},
+		{
+			"fieldName": "country",
+			"fieldLocator": [
+				"country_code_chosen",
+				"id"
+			],
+			"fieldType": "listbox",
+			"fieldValue": "4"
+		},
+		{
+			"fieldName": "phone",
+			"fieldLocator": [
+				"phone_number",
+				"id"
+			],
+			"fieldType": "textbox",
+			"fieldValue": "QA"
+		},
+		{
+			"fieldName": "cardholdername",
+			"fieldLocator": [
+				"cardHolderName",
+				"id"
+			],
+			"fieldType": "textbox",
+			"fieldValue": "vanitha"
+		},
+		{
+			"fieldName": "cardnumber",
+			"fieldLocator": [
+				"cardNumber",
+				"id"
+			],
+			"fieldType": "textbox",
+			"fieldValue": "5555555555554444"
+		},
+		{
+			"fieldName": "security",
+			"fieldLocator": [
+				"cardCVC",
+				"id"
+			],
+			"fieldType": "textbox",
+			"fieldValue": "123"
+		}
+	],
+	"button_field": [
+		{
+			"fieldName": "Login",
+			"fieldLocator": [
+				"btn-login",
+				"id"
+			],
+			"expectedElement": [
+				"email",
+				"id"
+			],
+			"fieldType": "button"
+		},
+		{
+			"fieldName": "Guest",
+			"fieldLocator": [
+				"btn-guest",
+				"id"
+			],
+			"expectedElement": [
+				"//p[@class='alert alert-info']",
+				"xpath"
+			],
+			"fieldType": "button"
+		},
+		{
+			"fieldName": "Complete_Booking",
+			"fieldLocator": [
+				"completeBooking",
+				"id"
+			],
+			"expectedElement": [
+				"first_name",
+				"id"
+			],
+			"fieldType": "button"
+		}
+	],
+	"validation": [
+		{
+			"firstname_empty": {
+				"fieldLocator": [
+					"first_name",
+					"id"
+				]
+			},
+			"lastname_empty": {
+				"fieldLocator": [
+					"last_name",
+					"id"
+				]
+			},
+			"email_empty": {
+				"fieldLocator": [
+					"//div[@class='col-md-6']//input[@id='email']",
+					"xpath"
+				]
+			},
+			"country_empty": {
+				"fieldLocator": [
+					"country_code_chosen",
+					"id"
+				]
+			},
+			"phone_empty": {
+				"fieldLocator": [
+					"phone_number",
+					"id"
+				]
+			},
+			"cardname_empty": {
+				"fieldLocator": [
+					"cardHolderName",
+					"id"
+				]
+			},
+			"cardnumber_empty": {
+				"fieldLocator": [
+					"cardNumber",
+					"id"
+				]
+			},
+			"security_empty": {
+				"fieldLocator": [
+					"cardCVC",
+					"id"
+				]
+			}
+		}
+	]
+}

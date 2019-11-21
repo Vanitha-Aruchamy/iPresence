@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BookingTest" duration-ms="17217" started-at="2019-11-21T00:21:59Z" finished-at="2019-11-21T00:22:16Z">
+    <groups>
+    </groups>
+    <test name="BookingTest" duration-ms="17217" started-at="2019-11-21T00:21:59Z" finished-at="2019-11-21T00:22:16Z">
+      <class name="com.iPresence.BookingTest">
+        <test-method status="PASS" signature="beforeclass(java.lang.String)[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="beforeclass" is-config="true" duration-ms="17510" started-at="2019-11-20T21:21:41Z" finished-at="2019-11-20T21:21:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="21" started-at="2019-11-20T21:21:59Z" finished-at="2019-11-20T21:21:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="FAIL" signature="TestLinksValidation()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestLinksValidation" duration-ms="10565" started-at="2019-11-20T21:21:59Z" finished-at="2019-11-20T21:22:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.iPresence.BookingTest.TestLinksValidation(BookingTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLinksValidation -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="0" started-at="2019-11-20T21:22:09Z" finished-at="2019-11-20T21:22:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestBookingLoginButton()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestBookingLoginButton" duration-ms="1161" started-at="2019-11-20T21:22:09Z" depends-on-methods="com.iPresence.BookingTest.TestLinksValidation" finished-at="2019-11-20T21:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBookingLoginButton -->
+        <test-method status="PASS" signature="TestGuestLoginButton()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestGuestLoginButton" duration-ms="634" started-at="2019-11-20T21:22:11Z" depends-on-methods="com.iPresence.BookingTest.TestBookingLoginButton" finished-at="2019-11-20T21:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestGuestLoginButton -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="0" started-at="2019-11-20T21:22:11Z" finished-at="2019-11-20T21:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestEmptyFirstName()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestEmptyFirstName" duration-ms="519" started-at="2019-11-20T21:22:11Z" depends-on-methods="com.iPresence.BookingTest.TestGuestLoginButton" finished-at="2019-11-20T21:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEmptyFirstName -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="0" started-at="2019-11-20T21:22:11Z" finished-at="2019-11-20T21:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="1" started-at="2019-11-20T21:22:12Z" finished-at="2019-11-20T21:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestEmptyLastName()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestEmptyLastName" duration-ms="714" started-at="2019-11-20T21:22:12Z" depends-on-methods="com.iPresence.BookingTest.TestEmptyFirstName" finished-at="2019-11-20T21:22:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEmptyLastName -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="1" started-at="2019-11-20T21:22:13Z" finished-at="2019-11-20T21:22:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestEmptyEmail()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestEmptyEmail" duration-ms="573" started-at="2019-11-20T21:22:13Z" depends-on-methods="com.iPresence.BookingTest.TestEmptyLastName" finished-at="2019-11-20T21:22:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEmptyEmail -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="4" started-at="2019-11-20T21:22:13Z" finished-at="2019-11-20T21:22:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestEmptyPhone()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestEmptyPhone" duration-ms="537" started-at="2019-11-20T21:22:13Z" depends-on-methods="com.iPresence.BookingTest.TestEmptyEmail" finished-at="2019-11-20T21:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEmptyPhone -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="1" started-at="2019-11-20T21:22:14Z" finished-at="2019-11-20T21:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestEmptyCardHolderName()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestEmptyCardHolderName" duration-ms="778" started-at="2019-11-20T21:22:14Z" depends-on-methods="com.iPresence.BookingTest.TestEmptyPhone" finished-at="2019-11-20T21:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEmptyCardHolderName -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="0" started-at="2019-11-20T21:22:14Z" finished-at="2019-11-20T21:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="TestEmptyCardNumber()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestEmptyCardNumber" duration-ms="880" started-at="2019-11-20T21:22:14Z" depends-on-methods="com.iPresence.BookingTest.TestEmptyCardHolderName" finished-at="2019-11-20T21:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEmptyCardNumber -->
+        <test-method status="PASS" signature="TestEmptySecurityCode()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestEmptySecurityCode" duration-ms="738" started-at="2019-11-20T21:22:15Z" depends-on-methods="com.iPresence.BookingTest.TestEmptyCardNumber" finished-at="2019-11-20T21:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEmptySecurityCode -->
+        <test-method status="PASS" signature="TestHouseHoldInformationSetUp()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="TestHouseHoldInformationSetUp" is-config="true" duration-ms="0" started-at="2019-11-20T21:22:15Z" finished-at="2019-11-20T21:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHouseHoldInformationSetUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.iPresence.BookingTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="238" started-at="2019-11-20T21:22:16Z" finished-at="2019-11-20T21:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.iPresence.BookingTest -->
+    </test> <!-- BookingTest -->
+  </suite> <!-- BookingTest -->
+  <suite name="iPresence" duration-ms="0" started-at="2019-11-21T00:22:16Z" finished-at="2019-11-21T00:22:16Z">
+    <groups>
+    </groups>
+  </suite> <!-- iPresence -->
+</testng-results>

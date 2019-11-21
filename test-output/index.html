@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-BookingTest">
+              <span class="suite-name border-failed">BookingTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-BookingTest">
+                    <span>C:\Users\selva\git\iPresence\src\test\resources\testSuites\BookingTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-BookingTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-BookingTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-BookingTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-BookingTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-BookingTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-BookingTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BookingTest" class="hide-methods failed suite-BookingTest"> (hide)</a> <!-- hide-methods failed suite-BookingTest -->
+                      <a href="#" panel-name="suite-BookingTest" class="show-methods failed suite-BookingTest"> (show)</a> <!-- show-methods failed suite-BookingTest -->
+                    </span>
+                    <div class="method-list-content failed suite-BookingTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestLinksValidation">TestLinksValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BookingTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BookingTest" class="hide-methods passed suite-BookingTest"> (hide)</a> <!-- hide-methods passed suite-BookingTest -->
+                      <a href="#" panel-name="suite-BookingTest" class="show-methods passed suite-BookingTest"> (show)</a> <!-- show-methods passed suite-BookingTest -->
+                    </span>
+                    <div class="method-list-content passed suite-BookingTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestBookingLoginButton">TestBookingLoginButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestEmptyCardHolderName">TestEmptyCardHolderName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestEmptyCardNumber">TestEmptyCardNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestEmptyEmail">TestEmptyEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestEmptyFirstName">TestEmptyFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestEmptyLastName">TestEmptyLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestEmptyPhone">TestEmptyPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestEmptySecurityCode">TestEmptySecurityCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingTest" title="com.iPresence.BookingTest" hash-for-method="TestGuestLoginButton">TestGuestLoginButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BookingTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BookingTest" class="panel BookingTest">
+          <div class="suite-BookingTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.iPresence.BookingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLinksValidation">
+                  </a> <!-- TestLinksValidation -->
+                  <span class="method-name">TestLinksValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.iPresence.BookingTest.TestLinksValidation(BookingTest.java:25)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookingTest-class-failed -->
+          <div class="suite-BookingTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.iPresence.BookingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestBookingLoginButton">
+                  </a> <!-- TestBookingLoginButton -->
+                  <span class="method-name">TestBookingLoginButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestEmptyCardHolderName">
+                  </a> <!-- TestEmptyCardHolderName -->
+                  <span class="method-name">TestEmptyCardHolderName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestEmptyCardNumber">
+                  </a> <!-- TestEmptyCardNumber -->
+                  <span class="method-name">TestEmptyCardNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestEmptyEmail">
+                  </a> <!-- TestEmptyEmail -->
+                  <span class="method-name">TestEmptyEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestEmptyFirstName">
+                  </a> <!-- TestEmptyFirstName -->
+                  <span class="method-name">TestEmptyFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestEmptyLastName">
+                  </a> <!-- TestEmptyLastName -->
+                  <span class="method-name">TestEmptyLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestEmptyPhone">
+                  </a> <!-- TestEmptyPhone -->
+                  <span class="method-name">TestEmptyPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestEmptySecurityCode">
+                  </a> <!-- TestEmptySecurityCode -->
+                  <span class="method-name">TestEmptySecurityCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestGuestLoginButton">
+                  </a> <!-- TestGuestLoginButton -->
+                  <span class="method-name">TestGuestLoginButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookingTest-class-passed -->
+        </div> <!-- panel BookingTest -->
+        <div panel-name="suite-iPresence" class="panel iPresence">
+        </div> <!-- panel iPresence -->
+        <div panel-name="test-xml-BookingTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\selva\git\iPresence\src\test\resources\testSuites\BookingTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;BookingTest&quot;&gt;
+  &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test name=&quot;BookingTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.iPresence.BookingTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BookingTest --&gt;
+&lt;/suite&gt; &lt;!-- BookingTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-iPresence" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\selva\git\iPresence\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;iPresence&quot;&gt;
+  &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;src\test\resources\testSuites\BookingTest.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- iPresence --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BookingTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BookingTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BookingTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-iPresence" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for iPresence</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BookingTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BookingTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-iPresence" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for iPresence</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BookingTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BookingTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BookingTest');
+function tableData_BookingTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestLinksValidation')
+data.setCell(0, 2, 'com.iPresence.BookingTest')
+data.setCell(0, 3, 10565);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestBookingLoginButton')
+data.setCell(1, 2, 'com.iPresence.BookingTest')
+data.setCell(1, 3, 1161);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestEmptyCardNumber')
+data.setCell(2, 2, 'com.iPresence.BookingTest')
+data.setCell(2, 3, 880);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestEmptyCardHolderName')
+data.setCell(3, 2, 'com.iPresence.BookingTest')
+data.setCell(3, 3, 778);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestEmptySecurityCode')
+data.setCell(4, 2, 'com.iPresence.BookingTest')
+data.setCell(4, 3, 738);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestEmptyLastName')
+data.setCell(5, 2, 'com.iPresence.BookingTest')
+data.setCell(5, 3, 714);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TestGuestLoginButton')
+data.setCell(6, 2, 'com.iPresence.BookingTest')
+data.setCell(6, 3, 634);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TestEmptyEmail')
+data.setCell(7, 2, 'com.iPresence.BookingTest')
+data.setCell(7, 3, 573);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TestEmptyPhone')
+data.setCell(8, 2, 'com.iPresence.BookingTest')
+data.setCell(8, 3, 537);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TestEmptyFirstName')
+data.setCell(9, 2, 'com.iPresence.BookingTest')
+data.setCell(9, 3, 519);
+window.suiteTableData['BookingTest']= { tableData: data, tableDiv: 'times-div-BookingTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <div id="times-div-BookingTest">
+              </div> <!-- times-div-BookingTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-iPresence" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for iPresence</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_iPresence');
+function tableData_iPresence() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['iPresence']= { tableData: data, tableDiv: 'times-div-iPresence'}
+return data;
+}
+              </script>
+              <div id="times-div-iPresence">
+              </div> <!-- times-div-iPresence -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BookingTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BookingTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-iPresence" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for iPresence</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BookingTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-iPresence" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BookingTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iPresence.BookingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeclass(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">17545 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestLinksValidation</span>
+                <span class="method-start">17568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">28150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestBookingLoginButton</span>
+                <span class="method-start">28150 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">29316 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestGuestLoginButton</span>
+                <span class="method-start">29316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">29952 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestEmptyFirstName</span>
+                <span class="method-start">29952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">30479 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestEmptyLastName</span>
+                <span class="method-start">30480 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">31198 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestEmptyEmail</span>
+                <span class="method-start">31199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">31772 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestEmptyPhone</span>
+                <span class="method-start">31776 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">32317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestEmptyCardHolderName</span>
+                <span class="method-start">32318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">33101 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestEmptyCardNumber</span>
+                <span class="method-start">33101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">TestHouseHoldInformationSetUp</span>
+                <span class="method-start">33986 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestEmptySecurityCode</span>
+                <span class="method-start">33986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34800 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-iPresence" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

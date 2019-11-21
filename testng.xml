@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="iPresence">
+<parameter name="browserType" value="chrome" />
+     <suite-files>
+         <suite-file path="src\test\resources\testSuites\BookingTest.xml" />
+    </suite-files>
+</suite>
