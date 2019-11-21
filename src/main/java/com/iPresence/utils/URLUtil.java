@@ -44,7 +44,7 @@ public class URLUtil {
 
 				Element[] elementArr = elements.toArray(new Element[] {});
 
-				for (int i = 0; i < elementArr.length-42; i++) {
+				for (int i = 0; i < elementArr.length; i++) {
 					Element j = elementArr[i];
 					boolean validurl = validateURL(j);
 					if (validurl == true) {
