@@ -13,7 +13,7 @@ Test methods are written in a generic way. Utils package contains all the reusab
 	test-outputs - Generated once the test suites triggered. Contains output files of tests.
 	POM - Contains project information, project dependencies, directories, plugin and goals.
 	testNG.bat - Batch file to trigger test suites
-	testNG.xml - Suite test contains all test suites path and order of execution.
+	testng.xml - Suite test contains all test suites path and order of execution.
 	
 
 ## To run test suites in eclipse
@@ -40,6 +40,5 @@ Test methods are written in a generic way. Utils package contains all the reusab
 2. Change the project location
 3. Save it and double click to trigger the test suites.
 
-
-
- 
+## Note :
+Currently test suites will be executed in chrome. If you want to run in firefox, just update the "browserType" param in the testng.xml file.
